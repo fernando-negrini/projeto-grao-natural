@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;500&family=Rubik&family=Secular+One&family=Work+Sans&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kanit', sans-serif;
+}
+/* Parte do menu responsivo */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ed4f0f;
+    box-shadow: 0px 3px 10px #464646;
+    width: 100%;
+    height: 75px;   
+}
+
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding:1.5rem 10rem;
+    padding-right: 15rem;
+    height: 27px; 
+}
+
+.logo{
+    display: flex   ;
+    align-items: center; 
+    justify-content: space-around;
+    
+    
+}
+.img_logo{
+    width: 85%;
+    height:auto;
+    justify-content: center;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    
+}
+.nav-item{
+    margin: 0 50px;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.0rem;
+    color: #ffffffff;
+    font-weight: 400;
+}
+.menu-button button{
+    border: none;
+    background-color: #ffffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    
+}
+.menu-button button a{
+    text-decoration: none;
+    color:#ed4f0f;
+    font-weight: 500;
+    font-size: 1.0rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+@media screen and (max-width:576px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .menu-button {
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .menu-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .menu-button button {
+        width: 100%;
+    }
+    .open {
+        display:block;
+    }
+    .mobile-menu {
+        background-color: #ed4f0f;;
+    }
+    }
+    /*Fim do menu responsivo*/
+
+
+
+
+
+    /*Início do Footer ( rodapé)*/
+    
+footer {
+    width: 100%;
+    height: 250px;  
+}
+footer .main {
+    width: 100%;
+    height: 300px;
+    background: #ed4f0f;
+    padding: 20px 10px;
+}
+.footer-links{
+    max-width: 90%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-top: 20px;  
+}
+.footer-Institucional, .footer-politicas-da-loja, .footer-contact, .footer-social {
+    color: white;
+    height: 100%;
+    min-height: 100px;
+}
+.footer-declaracao{
+    color: white;
+    height: 100%;
+    min-height: 50px;
+}
+.footer-links {
+    margin-bottom: 10px;
+}
+.footer-links h6{
+    margin-bottom: 8px;
+}
+.main .footer-social img{
+    width: 32px;
+    height: 32px;
+}
+footer .last {
+    width: 100%;
+    height: 50px;
+    background: #231720;
+    color: #ffffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+@media(max-width:576px){
+
+footer {
+    height: 100%;
+}
+footer .main{
+    height: 100%;
+}
+.footer-links {
+    flex-direction: column;
+    padding-left: 10%;
+}
+}
