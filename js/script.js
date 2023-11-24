@@ -10,3 +10,4 @@ function menuShow() {
         document.querySelector('.icon').src= "./imagem/close_white_36dp.svg";
     }
 }
+

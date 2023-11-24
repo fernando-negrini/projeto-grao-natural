@@ -1,0 +1,25 @@
+ /* Início FAQ*/
+
+ .question-faq {
+    height: 35px;
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #231720;
+    padding: 10px;
+    color: #ffffffff;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px #464646;
+}
+.resposta-faq {
+    height: 60px;
+    margin-bottom: 50px;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 10px ;
+    border-radius: 20px;   
+}
+
+    /*Fim FAQ*/
+
+   
