@@ -1,27 +1,32 @@
  /*Início Testemunhos*/
 
- .depoimentos{
-    width: 100%;
+
+ main .depoimentos {
+    display: none;
+    object-fit: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0;
+}
+main .depoimentos {
     display: flex;
     justify-content: center;
-    align-items: center;
- 
-}    
-
-.slide {
+    flex-direction: row;
+}
+ .depoimentos{
     width: 100%;
-    height: 200px;
-    overflow: hidden;
+    height: 250px;
+    display: flex;
+    padding: 15px;
+} 
+.slide { 
+    width: 50%;
+    height: 250px;
     box-shadow: 0px 3px 10px #464646;
     border-radius: 30px;
-}
-
-.container{
-    max-width: 1170px;
-    margin: auto;
-    padding: 0 15px;
     
 }
+
 /*section-header*/
 .section-header{
     text-align: center;
@@ -36,32 +41,33 @@
     text-shadow: 2px 5px 20px #464646;  
 }
 /*testimonials*/
-.testimonials{
-    padding: 100px 0;
-    
-}
+
 .testimonials-item{
-    background-color: hsl(0,0%,100%);
-    padding: 30px;
+    
+    padding: 20px;
     border-radius: 30px;
-    width: 700px;    
+    width: 100%; 
+    
 }
 .testimonials-item .info{
     display: flex;
     align-items: center;
+    flex-direction: row;
+    
 }
 .testimonials-item img{
-    max-width: 80px;
+    max-width: 100px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 20px; 
     vertical-align: middle;
+   
 }
 .testimonials-item .name{
     font-size: 24px;
-    text-transform: capitalize;
+    text-transform:capitalize;
     font-weight: 600;
     color: hsl(0,0%,0%);
-    line-height: 1.2;
+    
 }
 .testimonials-item .job {
     text-transform: capitalize;
@@ -70,19 +76,39 @@
 .testimonials-item p{
     margin-top: 20px;
     color: hsl(0,0%,40%);
+    padding: 5px;
+    
 }
 .testimonials-item .rating {
     margin-bottom: 15px;
     font-size: 14px;
     color: hsl(36,88%,66%);
+    
 }
-.botoes-troca-slider {
-    width: 100px; 
-    margin: 0 auto;
-    display: flex;
-}
-input{
+
+.radio{
     width: 100%;
-    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
     justify-content: center;
+    color: #ffff;
 }
+input[type="radio"] {
+      appearance: none; /* Remove os estilos padrão do sistema operacional */
+      -webkit-appearance: none; /* Para compatibilidade com navegadores WebKit, como o Chrome e o Safari */
+      -moz-appearance: none; /* Para compatibilidade com o Firefox */
+      width: 20px; /* Largura desejada */
+      height: 20px; /* Altura desejada */
+      border: 2px solid #333; /* Cor da borda padrão */
+      border-radius: 50%; /* Faz com que o input tenha a forma de um círculo */
+      outline: none; /* Remove a borda padrão ao focar no input */
+      cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    }
+
+    /* Estilizando o input radio quando está marcado */
+    input[type="radio"]:checked {
+      background-color: #ed4f0f; /* Cor de fundo quando marcado */
+      border-color: #ed4f0f; /* Cor da borda quando marcado */
+    }
+
+   

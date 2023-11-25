@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-widht, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/style-depoiment.css">
     <link rel="stylesheet" href="./css/style-faq.css">
     <link rel="stylesheet" href="./css/style-footer.css">
     <link rel="stylesheet" href="./css/catalogo home.css">
     <link rel="stylesheet" href="./css/style carrossel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
     <title>Projeto Grão Natural</title>
 </head>
+
 <body>
     <!-- menu responsivo -->
     <header>
         <nav class="nav-bar">
-            
+
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link"><b>Início</b></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><b>Sobre</b></a></li>
                 </ul>
                 <div class="logo">
-                    <img class="img_logo" src="./imagem/Logotipo-fundo-laranja-escrita-branca.png" alt="logo laranja com escrita branca">
-                    
+                    <img class="img_logo" src="./imagem/Logotipo-fundo-laranja-escrita-branca.png"
+                        alt="logo laranja com escrita branca">
+
                 </div>
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link"><b>Promoção</b></a></li>
                     <li class="nav-item"><a href="#" class="nav-link"><b>Catálogo</b></a></li>
                 </ul>
-                                
+
             </div>
             <div class="mobile-menu-icon">
                 <button onclick="menuShow()"><img class="icon" src="./imagem/menu_white_36dp.svg" alt=""></button>
@@ -45,273 +48,298 @@
                 <li class="nav-item"><a href="#" class="nav-link">Promoção</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Catálogo</a></li>
             </ul>
-            
+
 
         </div>
     </header>
-    
-<!-- Fim do menu -->
 
-<!--Slider principal-->
-<section class="slider">
-    <div class="slider-content">   <!--Conteudo do slide-->
-        <input type="radio" name="btn-radio" id="radio1">
-        <input type="radio" name="btn-radio" id="radio2">
-        <input type="radio" name="btn-radio" id="radio3">
-        <input type="radio" name="btn-radio" id="radio4">
-       
+    <!-- Fim do menu -->
 
-        <div class="slide-box primeiro">
-
-            <a href="Castanhas/Castanhas.html" target="_blank">
-                <img class="img-desktop" src="Imagens/teste 1.jpg" alt="slide 1">
-            </a>
-           
-        </div>
-
-        <div class="slide-box">
-            <a href="Temperos/Temperos.html" target="_blank">
-                <img class="img-desktop" src="Imagens/Tempero.jpg" alt="slide 1">
-            </a>
-        </div>
+    <!--Slider principal-->
+    <section class="slider">
+        <div class="slider-content"> <!--Conteudo do slide-->
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
 
 
-        <div class="slide-box">
-            <a href="Light/Light.html" target="_blank">
-                <img class="img-desktop" src="Imagens/slide-2.jpg" alt="slide 1">
-            </a>
-        </div>
-        
-        <div class="slide-box">
-            <a href="Suplementos/Suplementos.html" target="_blank">
-                <img class="img-desktop" src="Imagens/suplementos.jpg" alt="slide 1">
-            </a>
-        </div>
-  
+            <div class="slide-box primeiro">
 
-        <div class="nav-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-        </div>
-        
-        <div class="nav-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-        
-        </div>
+                <a href="Castanhas/Castanhas.html" target="_blank">
+                    <img class="img-desktop" src="Imagens/teste 1.jpg" alt="slide 1">
+                </a>
 
-    </div>
-    
-</section>
- <!--fim slider principal-->
- 
-<br><br><br><br>
- <!--catalogo-->
- <div class="catalog">
-    <div class="catalog-item" onclick="toggleDetails(1)">
-    <img src="Imagens/tamara-sem-caroco.jpg" alt="Imagem do Produto">
-      <h2>Tamara sem Caroço</h2>
-      <p class="price">R$ 4,40</p>
-      <div class="details" id="details2">
-      <p class="description">Tâmara sem caroço: Doce, Suave, Energética, Perfeita para Snacks Saudáveis e Receitas.</p>
-      </div>
-    </div>
-
-    <div class="catalog-item" onclick="toggleDetails(1)">
-      <img src="Imagens/Castanha do para.jpg" alt="Imagem do Produto">
-        <h2>Castanha do Para</h2>
-        <p class="price">R$ 10,93</p>
-        <div class="details" id="details2">
-        <p class="description">Castanha do Pará: Grande, Nutritiva, Crocante, Sabor Intenso, Fonte Energética Natural.</p>
-        </div>
-      </div>
-
-    <div class="catalog-item" onclick="toggleDetails(1)">
-        <img src="Imagens/canela em pau.jpg" alt="Imagem do Produto2">
-          <h2>Canela em Pau</h2>
-          <p class="price">R$ 11,39</p>
-          <div class="details" id="details2">
-          <p class="description">Canela em Pau: Aromática, Versátil, Condimento Rico, Ideal para Infusões Aromáticas.</p>
-          </div>
-    </div>
-
-    <div class="catalog-item" onclick="toggleDetails(1)">
-        <img src="Imagens/Castanha.jpg" alt="Imagem do Produto2">
-          <h2>Castanha de Caju - Torrada sem sal</h2>
-          <p class="price">R$ 12,65</p>
-          <div class="details" id="details2">
-          <p class="description">Castanha de Caju: Crocante, Sabor Rica, Nutritiva, Perfeita para Snacks Saudáveis.</p>
-          </div>
-    </div>
-</div>
-
-<div class="catalog" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
-    <div class="catalog-item" onclick="toggleDetails(1)">
-    <img src="Imagens/Uva passa.jpg" alt="Imagem do Produto">
-      <h2>Uva passa preta sem semente</h2>
-      <p class="price">R$ 2,88</p>
-      <div class="details" id="details2">
-      <p class="description">Uva passa preta: Dulçor intenso, Versátil, Ideal para Receitas e Snacks. </p>
-      </div>
-    </div>
-
-    <div class="catalog-item" onclick="toggleDetails(1)">
-        <img src="Imagens/Mix de Castanhas.jpg" alt="Imagem do Produto2">
-          <h2>Mix de Castanhas</h2>
-          <p class="price">R$ 12,65</p>
-          <div class="details" id="details2">
-          <p class="description">Mix de Castanhas: Crocante, Nutritivo, Variedade Saborosa, Lanche Energético Sofisticado.</p>
-          </div>
-    </div>
-
-    <div class="catalog-item" onclick="toggleDetails(1)">
-        <img src="Imagens/Amendoa.png" alt="Imagem do Produto2">
-          <h2>Amendoa Torrada</h2>
-          <p class="price">R$ 9,20</p>
-          <div class="details" id="details2">
-          <p class="description">Amêndoa Torrada: Crocante, Dourada, Sabor Intenso, Snack Sofisticado e Nutritivo.</p>
-          </div>
-    </div>
-
-    <div class="catalog-item" onclick="toggleDetails(1)">
-      <img src="Imagens/Aveia em Flocos.jpg" alt="Imagem do Produto2">
-        <h2>Aveia em Flocos</h2>
-        <p class="price">R$ 1,61</p>
-        <div class="details" id="details2">
-        <p class="description">Aveia em flocos: Nutritiva, Versátil, Fonte de Energia, Ideal para Receitas.</p>
-        </div>
-  </div>
-</div>
-
-<!--fim catalogo-->
-
-
-<!--Início carrossel de depoimento-->
-<div class="depoimentos">
-    
-    
-    <section class="testimonials">
-        
-        <div class="container">
-            <div class="section-header">
-                <h2 class="title">O que nossos clientes estão dizendo ?</h2>
             </div>
-                    <div class="slide">
-    
-                        <div class="testimonials-content">
-                        <div class="testimonials-item">
-                            <div class="info">
-                                <img src="./imagem/ines brasil" alt="imagem anonima">
-                                <div class="text-box">
-                                    <h3 class="name">Nome provisório</h3>
-                                    <span class="job">Trabalho provisório</span>
-                                </div>
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores vitae explicabo architecto similique, quos cumque neque minus consequuntur doloremque!</p>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                        <br><br>
-                        <div class="testimonials-content">
-                        <div class="testimonials-item">
-                            <div class="info">
-                                <img src="./imagem/ines brasil" alt="imagem anonima">
-                                <div class="text-box">
-                                    <h3 class="name">Nome provisório</h3>
-                                    <span class="job">Trabalho provisório</span>
-                                </div>
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores vitae explicabo architecto similique, quos cumque neque minus consequuntur doloremque!</p>
-                            <div class="rating">
-                               <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-                        <div class="testimonials-content">
-                        <div class="testimonials-item">
-                            <div class="info">
-                                <img src="./imagem/ines brasil" alt="imagem anonima">
-                                <div class="text-box">
-                                    <h3 class="name">Nome provisório</h3>
-                                    <span class="job">Trabalho provisório</span>
-                                </div>
-                            </div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores vitae explicabo architecto similique, quos cumque neque minus consequuntur doloremque!</p>
-                            <div class="rating">
-                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                
+
+            <div class="slide-box">
+                <a href="Temperos/Temperos.html" target="_blank">
+                    <img class="img-desktop" src="Imagens/Tempero.jpg" alt="slide 1">
+                </a>
             </div>
-    <br><br>
-    <div class="botoes-troca-slider">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-    </div>
-        
-      
+
+
+            <div class="slide-box">
+                <a href="Light/Light.html" target="_blank">
+                    <img class="img-desktop" src="Imagens/slide-2.jpg" alt="slide 1">
+                </a>
+            </div>
+
+            <div class="slide-box">
+                <a href="Suplementos/Suplementos.html" target="_blank">
+                    <img class="img-desktop" src="Imagens/suplementos.jpg" alt="slide 1">
+                </a>
+            </div>
+
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+
+            </div>
+
         </div>
-        
-        
-        
+
     </section>
-    </div>
-    
+    <!--fim slider principal-->
 
-<!--FAQ-->
-<div class="depoiments">
-<section>
-    <details>
-        <summary class="question-faq"><b>Meu pedido pode demorar mais de 7 dias  para chegar?</b></summary>
-        <p class="resposta-faq">Embora o prazo máximo para entrega seja 7 dias úteis, é possivel que alguns pedidos demorem mais que isso para chegar, dependendo do destino e da logística dos Correios.</p>
-    </details><br>
-    <details>
-        <summary class="question-faq"><b>Posso devolver minha compra em caso de arrependimento?</b></summary>
-        <p class="resposta-faq">Sim, para saber mais sobre políticas de trocas e devoluções, visite a página "Troca e devoluções" no rodapé de nosso site. </p>
-    </details><br>
-    <details>    
-        <summary class="question-faq"><b>Se eu fizer mais que um pedido, todos chegarão juntos?</b></summary>
-        <p class="resposta-faq">Sim , se você fizer mais que um pedido , o Grão Natural Empório enviará todos os itens juntos, para garantir uma entrega mais rápida e eficiente.</p>
-    </details><br>
-    <details>    
-        <summary class="question-faq"><b>Qual a procedência dos produtos da Grão Natural Empório?</b></summary>
-        <p class="resposta-faq">Nossos produtos provém de fontes confiáveis , incluíndo fornecedores locais e internacionais que atendem nossos critérios rigorosos de qualidade. Além disso, estamos sempre em busca de igredientes naturais, orgânicos e saudáveis para compor nosso catá <br>Temos o compromisso de garantir que cada item em nosso estoque atenda as normas de segurança alimentar e de qualidade. Fornecendo informações transparenrtes sobre a origem e os benefícios de cada produto para que você possa fazer escolhas informadas e saudáveis. </p>
-    </details><br>
-</section>
-</div>
-<!--Fim FAQ--
+    <br><br><br><br>
+    <!--catalogo-->
+    <div class="catalog">
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/tamara-sem-caroco.jpg" alt="Imagem do Produto">
+            <h2>Tamara sem Caroço</h2>
+            <p class="price">R$ 4,40</p>
+            <div class="details" id="details2">
+                <p class="description">Tâmara sem caroço: Doce, Suave, Energética, Perfeita para Snacks Saudáveis e
+                    Receitas.</p>
+            </div>
+        </div>
+
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/Castanha do para.jpg" alt="Imagem do Produto">
+            <h2>Castanha do Para</h2>
+            <p class="price">R$ 10,93</p>
+            <div class="details" id="details2">
+                <p class="description">Castanha do Pará: Grande, Nutritiva, Crocante, Sabor Intenso, Fonte Energética
+                    Natural.</p>
+            </div>
+        </div>
+
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/canela em pau.jpg" alt="Imagem do Produto2">
+            <h2>Canela em Pau</h2>
+            <p class="price">R$ 11,39</p>
+            <div class="details" id="details2">
+                <p class="description">Canela em Pau: Aromática, Versátil, Condimento Rico, Ideal para Infusões
+                    Aromáticas.</p>
+            </div>
+        </div>
+
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/Castanha.jpg" alt="Imagem do Produto2">
+            <h2>Castanha de Caju - Torrada sem sal</h2>
+            <p class="price">R$ 12,65</p>
+            <div class="details" id="details2">
+                <p class="description">Castanha de Caju: Crocante, Sabor Rica, Nutritiva, Perfeita para Snacks
+                    Saudáveis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/Uva passa.jpg" alt="Imagem do Produto">
+            <h2>Uva passa preta sem semente</h2>
+            <p class="price">R$ 2,88</p>
+            <div class="details" id="details2">
+                <p class="description">Uva passa preta: Dulçor intenso, Versátil, Ideal para Receitas e Snacks. </p>
+            </div>
+        </div>
+
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/Mix de Castanhas.jpg" alt="Imagem do Produto2">
+            <h2>Mix de Castanhas</h2>
+            <p class="price">R$ 12,65</p>
+            <div class="details" id="details2">
+                <p class="description">Mix de Castanhas: Crocante, Nutritivo, Variedade Saborosa, Lanche Energético
+                    Sofisticado.</p>
+            </div>
+        </div>
+
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/Amendoa.png" alt="Imagem do Produto2">
+            <h2>Amendoa Torrada</h2>
+            <p class="price">R$ 9,20</p>
+            <div class="details" id="details2">
+                <p class="description">Amêndoa Torrada: Crocante, Dourada, Sabor Intenso, Snack Sofisticado e Nutritivo.
+                </p>
+            </div>
+        </div>
+
+        <div class="catalog-item" onclick="toggleDetails(1)">
+            <img src="Imagens/Aveia em Flocos.jpg" alt="Imagem do Produto2">
+            <h2>Aveia em Flocos</h2>
+            <p class="price">R$ 1,61</p>
+            <div class="details" id="details2">
+                <p class="description">Aveia em flocos: Nutritiva, Versátil, Fonte de Energia, Ideal para Receitas.</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+
+    <!--fim catalogo-->
+
+
+    <!--Depoimentos-->
+
+    <div class="section-header">
+        <h2 class="title">O que nossos clientes estão dizendo ?</h2>
+    </div>
+    <main class="depoiments">
+        <div class="depoimentos depoimento-1">
+            <div class="slide selecionado">
+                <div class="testimonials-conten">
+                    <div class="testimonials-item">
+                        <div class="info">
+                            <img src="./imagem/ines brasil2.jpg" alt="imagem anonima">
+                            <div class="text-box">
+                                <h3 class="name">Inês Brasil 1</h3>
+                                <span class="job">Trabalho provisório</span>
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores vitae explicabo
+                            architecto similique, quos cumque neque minus consequuntur doloremque!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="depoimentos depoimento-2">
+            
+            <div class="slide">
+                <div class="testimonials-conten">
+                    <div class="testimonials-item">
+                        <div class="info">
+                            <img src="./imagem/Ines-Brasil3.webp" alt="imagem anonima">
+                            <div class="text-box">
+                                <h3 class="name">Ines brasil 2</h3>
+                                <span class="job">Trabalho provisório</span>
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores vitae explicabo
+                            architecto similique, quos cumque neque minus consequuntur doloremque!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="depoimentos depoimento-3">
+            
+            <div class="slide">
+                <div class="testimonials-conten">
+                    <div class="testimonials-item">
+                        <div class="info">
+                            <img src="./imagem/Ines-Brasil1.webp" alt="imagem anonima">
+                            <div class="text-box">
+                                <h3 class="name">Ines Brasil 3</h3>
+                                <span class="job">Trabalho provisório</span>
+                            </div>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis dolores vitae explicabo
+                            architecto similique, quos cumque neque minus consequuntur doloremque!</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="radio">
+            <input type="radio" name="toggle" id="radio1"> <label for="radio1">Radio 1</label>
+            <input type="radio" name="toggle" id="radio2"> <label for="radio2">Radio 2</label>
+            <input type="radio" name="toggle" id="radio3"> <label for="radio3">Radio 3</label>  
+        </div>
+        
+
+        
+        
+
+
+    </main>
+    <script src="./js/script-depoiments.js"></script>
+    </body>
+
+
+    <!--FAQ-->
+    <div class="FAQ">
+        <div class="section-header">
+            <h2 class="title"> Principais Dúvidas</h2>
+        </div>
+        <section>
+            <details>
+                <summary class="question-faq"><b>Meu pedido pode demorar mais de 7 dias para chegar?</b></summary>
+                <p class="resposta-faq">Embora o prazo máximo para entrega seja 7 dias úteis, é possivel que alguns
+                    pedidos demorem mais que isso para chegar, dependendo do destino e da logística dos Correios.</p>
+            </details><br>
+            <details>
+                <summary class="question-faq"><b>Posso devolver minha compra em caso de arrependimento?</b></summary>
+                <p class="resposta-faq">Sim, para saber mais sobre políticas de trocas e devoluções, visite a página
+                    "Troca e devoluções" no rodapé de nosso site. </p>
+            </details><br>
+            <details>
+                <summary class="question-faq"><b>Se eu fizer mais que um pedido, todos chegarão juntos?</b></summary>
+                <p class="resposta-faq">Sim , se você fizer mais que um pedido , o Grão Natural Empório enviará todos os
+                    itens juntos, para garantir uma entrega mais rápida e eficiente.</p>
+            </details><br>
+            <details>
+                <summary class="question-faq"><b>Qual a procedência dos produtos da Grão Natural Empório?</b></summary>
+                <p class="resposta-faq">Nossos produtos provém de fontes confiáveis , incluíndo fornecedores locais e
+                    internacionais que atendem nossos critérios rigorosos de qualidade. Além disso, estamos sempre em
+                    busca de igredientes naturais, orgânicos e saudáveis para compor nosso catá <br>Temos o compromisso
+                    de garantir que cada item em nosso estoque atenda as normas de segurança alimentar e de qualidade.
+                    Fornecendo informações transparenrtes sobre a origem e os benefícios de cada produto para que você
+                    possa fazer escolhas informadas e saudáveis. </p>
+            </details><br>
+        </section>
+    </div>
+    <!--Fim FAQ--
 
 
 <!--Início do Footer (rodapé)-->
-<footer>
-    <div class="main">
-        
-        <div class="content footer-links">
-            <div class="footer-declaracao">
-                <h3>Nossa Dedicação  a Você</h3>
-                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Amet provident incidunt cupiditate sit molestiae error odio. <br>Libero dolorem facere corrupti</h6>
+    <footer>
+        <div class="main">
+
+            <div class="content footer-links">
+                <div class="footer-declaracao">
+                    <h3>Nossa Dedicação a Você</h3>
+                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Amet provident incidunt cupiditate
+                        sit molestiae error odio. <br>Libero dolorem facere corrupti</h6>
                     <div class="footer-contact">
                         <h3>Fale conosco</h3>
                         <h6>(17)99646-6777</h6>
@@ -319,40 +347,42 @@
                         <h3>Faça-nos uma visita</h3>
                         <h6>Ra General Gicério,3898, São José do Rio Preto<br> São Paulo - Brasil. CEP 15015-400</h6>
                     </div>
-            </div>
-            
-            <div class="footer-Institucional">
-                <h3>Institucional </h3>
-                <h6>Início </h6>
-                <h6>Promoções </h6>
-                <h6>Mais vendidos</h6>
-                <h6>FAQ</h6>
-            </div>
-            <div class="footer-politicas-da-loja">
-                <h3>Políticas da Loja </h3>
-                <h6>Política de Privacidade </h6>
-                <h6>Trocas </h6>
-                <h6>Devoluções e Reembolso</h6>
-            </div>
-            <div class="footer-social">
-                <h3>Fique Conectado</h3>
-                <img src="./imagem/instagram_logo.png" alt="Instagram">
-                <img src="./imagem/facebook_logo.png" alt="Facebook">
-                <img src="#" alt="WhatsApp">
+                </div>
 
+                <div class="footer-Institucional">
+                    <h3>Institucional </h3>
+                    <h6>Início </h6>
+                    <h6>Promoções </h6>
+                    <h6>Mais vendidos</h6>
+                    <h6>FAQ</h6>
+                </div>
+                <div class="footer-politicas-da-loja">
+                    <h3>Políticas da Loja </h3>
+                    <h6>Política de Privacidade </h6>
+                    <h6>Trocas </h6>
+                    <h6>Devoluções e Reembolso</h6>
+                </div>
+                <div class="footer-social">
+                    <h3>Fique Conectado</h3>
+                    <img src="./imagem/instagram_logo.png" alt="Instagram">
+                    <img src="./imagem/facebook_logo.png" alt="Facebook">
+                    <img src="#" alt="WhatsApp">
+
+                </div>
             </div>
-        </div>
         </div>
         <div class="last">
             Grão Impório Natural - Equipe CFJN Fatec - Versão Demo
-         </div>
+        </div>
 
 
-    </div>
-</footer>
+        </div>
+    </footer>
 
-<script src="./js/script.js"></script>
-<script src="./js/carrossel.js"></script>
-<script src="./js/catalogo home.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/carrossel.js"></script>
+    <script src="./js/catalogo home.js"></script>
+    <script src="./js/script-depoiments.js"></script>
 </body>
+
 </html>

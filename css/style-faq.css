@@ -1,5 +1,7 @@
  /* Início FAQ*/
 
+
+ 
  .question-faq {
     height: 35px;
     margin: auto;
@@ -19,6 +21,20 @@
     padding: 10px ;
     border-radius: 20px;   
 }
+.FAQ{
+    padding: 100px;
+}
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section-header .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: black;
+    line-height: 1.2;
+    text-shadow: 2px 5px 20px #464646; 
 
     /*Fim FAQ*/
 
